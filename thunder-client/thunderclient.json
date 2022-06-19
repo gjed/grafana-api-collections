@@ -1367,5 +1367,271 @@
     ],
     "params": [],
     "tests": []
+  },
+  {
+    "_id": "b3273516-459b-4ece-b99a-893a8ae175e0",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "1d34415f-8cbe-4597-abfa-3f0ce3644f64",
+    "name": "Team Search With Paging",
+    "url": "{{baseUrl}}/api/teams/search?perpage=1000&page=1&query=myteam",
+    "method": "GET",
+    "sortNum": 200000,
+    "created": "2022-06-19T17:46:37.503Z",
+    "modified": "2022-06-19T17:47:58.305Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [
+      {
+        "name": "perpage",
+        "value": "1000",
+        "isPath": false
+      },
+      {
+        "name": "page",
+        "value": "1",
+        "isPath": false
+      },
+      {
+        "name": "query",
+        "value": "myteam",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "9fe75ddc-d40d-4184-a607-0a454c4f7e83",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "1d34415f-8cbe-4597-abfa-3f0ce3644f64",
+    "name": "Get Team By Id",
+    "url": "{{baseUrl}}/api/teams/{{teamId}}",
+    "method": "GET",
+    "sortNum": 210000,
+    "created": "2022-06-19T17:48:23.403Z",
+    "modified": "2022-06-19T17:49:03.167Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "fdaa01b8-6897-4520-8bb4-5b8b751c6be7",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "1d34415f-8cbe-4597-abfa-3f0ce3644f64",
+    "name": "Add Team",
+    "url": "{{baseUrl}}/api/teams",
+    "method": "POST",
+    "sortNum": 220000,
+    "created": "2022-06-19T17:49:34.160Z",
+    "modified": "2022-06-19T17:50:34.336Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": \"MyTestTeam\",\n  \"email\": \"email@test.com\",\n  \"orgId\": \"{{orgId}}\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "c7ccfab1-54bd-4dce-8ad2-e69683cd411f",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "1d34415f-8cbe-4597-abfa-3f0ce3644f64",
+    "name": "Update Team",
+    "url": "{{baseUrl}}/api/teams/{{teamId}}",
+    "method": "PUT",
+    "sortNum": 230000,
+    "created": "2022-06-19T17:49:35.717Z",
+    "modified": "2022-06-19T17:51:07.974Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": \"MyTestTeam\",\n  \"email\": \"email@test.com\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "db84ddc2-8768-40c2-8836-d441f62d80ea",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "1d34415f-8cbe-4597-abfa-3f0ce3644f64",
+    "name": "Delete Team By Id",
+    "url": "{{baseUrl}}/api/teams/{{teamId}}/members",
+    "method": "GET",
+    "sortNum": 240000,
+    "created": "2022-06-19T17:49:37.164Z",
+    "modified": "2022-06-19T17:52:16.322Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "9bfaa92c-09d9-43f0-916f-c9ee7785f215",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "1d34415f-8cbe-4597-abfa-3f0ce3644f64",
+    "name": "Get Team Members",
+    "url": "{{baseUrl}}/api/teams/{{teamId}}",
+    "method": "GET",
+    "sortNum": 250000,
+    "created": "2022-06-19T17:51:55.472Z",
+    "modified": "2022-06-19T17:53:53.069Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "3a473fed-499c-4a7e-a17c-02f38efaec9c",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "1d34415f-8cbe-4597-abfa-3f0ce3644f64",
+    "name": "Add Team Member",
+    "url": "{{baseUrl}}/api/teams/{{teamId}}/members",
+    "method": "POST",
+    "sortNum": 260000,
+    "created": "2022-06-19T17:51:56.807Z",
+    "modified": "2022-06-19T17:54:26.443Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"userId\": {{userId}}\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "35ca81e3-6898-4c5f-8f0e-3987e32c6fe7",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "1d34415f-8cbe-4597-abfa-3f0ce3644f64",
+    "name": "Remove Member From Team",
+    "url": "{{baseUrl}}/api/teams/{{teamId}}/members/{{userId}}",
+    "method": "DELETE",
+    "sortNum": 270000,
+    "created": "2022-06-19T17:51:58.532Z",
+    "modified": "2022-06-19T17:59:44.128Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "af0ca473-f2ba-4ff6-8ed6-69929329798f",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "1d34415f-8cbe-4597-abfa-3f0ce3644f64",
+    "name": "Get Team Preferences",
+    "url": "{{baseUrl}}/api/teams/{{teamId}}/preferences",
+    "method": "GET",
+    "sortNum": 280000,
+    "created": "2022-06-19T18:00:10.400Z",
+    "modified": "2022-06-19T18:00:52.360Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "49856afc-2624-4756-a468-c447d05a7aea",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "1d34415f-8cbe-4597-abfa-3f0ce3644f64",
+    "name": "Update Team Preferences",
+    "url": "{{baseUrl}}/api/teams/{{teamId}}/preferences",
+    "method": "PUT",
+    "sortNum": 290000,
+    "created": "2022-06-19T18:00:17.256Z",
+    "modified": "2022-06-19T18:02:01.950Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"theme\": \"light\",\n  \"timezone\": \"UTC\"\n}",
+      "form": []
+    },
+    "tests": []
   }
 ]

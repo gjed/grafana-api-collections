@@ -1055,5 +1055,271 @@
       "form": []
     },
     "tests": []
+  },
+  {
+    "_id": "90b6b6a2-1f8e-4b48-8967-0d9f61ba62e4",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{baseUrl}}/api/teams/search?perpage=1000&page=1&query=myteam",
+    "url": "{{baseUrl}}/api/teams/search?perpage=1000&page=1&query=myteam",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-06-19T17:47:58.230Z",
+    "modified": "2022-06-19T17:47:58.306Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [
+      {
+        "name": "perpage",
+        "value": "1000",
+        "isPath": false
+      },
+      {
+        "name": "page",
+        "value": "1",
+        "isPath": false
+      },
+      {
+        "name": "query",
+        "value": "myteam",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "6cdcf9e0-c1ba-4bfd-b4e9-aefc8b1c9dd6",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{baseUrl}}/api/teams/{{teamId}}",
+    "url": "{{baseUrl}}/api/teams/{{teamId}}",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-06-19T17:49:03.096Z",
+    "modified": "2022-06-19T17:49:19.877Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "99e07cc2-b331-4dca-97a0-53ab1b26dfc1",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{baseUrl}}/api/teams",
+    "url": "{{baseUrl}}/api/teams",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-06-19T17:50:34.256Z",
+    "modified": "2022-06-19T17:50:34.337Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": \"MyTestTeam\",\n  \"email\": \"email@test.com\",\n  \"orgId\": \"{{orgId}}\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "25cdb60d-41af-4e24-b8e7-467935a97204",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{baseUrl}}/api/teams/{{teamId}}",
+    "url": "{{baseUrl}}/api/teams/{{teamId}}",
+    "method": "PUT",
+    "sortNum": 0,
+    "created": "2022-06-19T17:51:07.905Z",
+    "modified": "2022-06-19T17:51:14.716Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": \"MyTestTeam\",\n  \"email\": \"email@test.com\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "3affa91a-3dec-4cfc-a01f-ba8cdc9a0547",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{baseUrl}}/api/teams/{{teamId}}",
+    "url": "{{baseUrl}}/api/teams/{{teamId}}",
+    "method": "DELETE",
+    "sortNum": 0,
+    "created": "2022-06-19T17:51:45.553Z",
+    "modified": "2022-06-19T17:51:45.626Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "44ebf532-8ec9-4928-a778-fc6eb4d79d19",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{baseUrl}}/api/teams/{{teamId}}/members",
+    "url": "{{baseUrl}}/api/teams/{{teamId}}/members",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-06-19T17:52:16.254Z",
+    "modified": "2022-06-19T17:52:16.323Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "491db140-f5da-47e0-8cf8-2b9414ce814a",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{baseUrl}}/api/teams/{{teamId}}/members",
+    "url": "{{baseUrl}}/api/teams/{{teamId}}/members",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-06-19T17:58:51.364Z",
+    "modified": "2022-06-19T17:58:51.441Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"userId\": {{userId}}\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "0a1326a8-4edf-4074-8abb-f7aebd4dc946",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{baseUrl}}/api/teams/{{teamId}}/members/{{userId}}",
+    "url": "{{baseUrl}}/api/teams/{{teamId}}/members/{{userId}}",
+    "method": "DELETE",
+    "sortNum": 0,
+    "created": "2022-06-19T17:59:44.055Z",
+    "modified": "2022-06-19T17:59:44.129Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "42f7a9a1-e204-464b-b7f5-05df6413282c",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{baseUrl}}/api/teams/{{teamId}}/preferences",
+    "url": "{{baseUrl}}/api/teams/{{teamId}}/preferences",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-06-19T18:00:52.292Z",
+    "modified": "2022-06-19T18:00:52.361Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "b6565d3e-ded2-4574-b13a-626c33cdac77",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{baseUrl}}/api/teams/{{teamId}}/preferences",
+    "url": "{{baseUrl}}/api/teams/{{teamId}}/preferences",
+    "method": "PUT",
+    "sortNum": 0,
+    "created": "2022-06-19T18:02:01.879Z",
+    "modified": "2022-06-19T18:02:01.951Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"theme\": \"light\",\n  \"timezone\": \"UTC\"\n}",
+      "form": []
+    },
+    "tests": []
   }
 ]
