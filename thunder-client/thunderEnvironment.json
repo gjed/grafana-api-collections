@@ -1,0 +1,12 @@
+[
+  {
+    "_id": "b2ef8c54-aa24-48ae-9701-8e609d449c8e",
+    "name": "Grafana-env",
+    "default": true,
+    "sortNum": 10000,
+    "created": "2022-06-17T11:40:24.818Z",
+    "modified": "2022-06-19T15:29:34.501Z",
+    "data": [],
+    "envFile": ".env"
+  }
+]

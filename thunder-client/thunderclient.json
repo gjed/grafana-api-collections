@@ -1,0 +1,932 @@
+[
+  {
+    "_id": "05c9d364-62d0-4809-b626-617946942ca2",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "b137478d-7d03-4249-b13e-3ea9fb404fae",
+    "name": "Fetch Settings",
+    "url": "{{baseUrl}}/api/admin/settings",
+    "method": "GET",
+    "sortNum": 10000,
+    "created": "2022-06-17T11:21:28.937Z",
+    "modified": "2022-06-17T11:21:28.937Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json",
+        "isDisabled": true
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json",
+        "isDisabled": true
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "7791ea1b-4c64-4803-8d66-bd805555c339",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "b137478d-7d03-4249-b13e-3ea9fb404fae",
+    "name": "Grafana Stats",
+    "url": "{{baseUrl}}/api/admin/stats",
+    "method": "GET",
+    "sortNum": 15000,
+    "created": "2022-06-17T11:21:28.938Z",
+    "modified": "2022-06-17T11:21:28.938Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json",
+        "isDisabled": true
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json",
+        "isDisabled": true
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "872472f0-493e-400d-b561-fab5fc454014",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "b137478d-7d03-4249-b13e-3ea9fb404fae",
+    "name": "Grafana Usage Report preview",
+    "url": "{{baseUrl}}/api/admin/usage-report-preview",
+    "method": "GET",
+    "sortNum": 17500,
+    "created": "2022-06-17T11:21:28.939Z",
+    "modified": "2022-06-17T11:21:28.939Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json",
+        "isDisabled": true
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json",
+        "isDisabled": true
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "c82a3832-c9e0-4d1a-83c6-3b24ad3eb5bc",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "b137478d-7d03-4249-b13e-3ea9fb404fae",
+    "name": "Global Users",
+    "url": "{{baseUrl}}/api/admin/users",
+    "method": "POST",
+    "sortNum": 20000,
+    "created": "2022-06-17T11:21:28.940Z",
+    "modified": "2022-06-18T16:12:36.682Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\":\"User\",\n  \"email\":\"user@graf.com\",\n  \"login\":\"user\",\n  \"password\":\"userpassword\",\n  \"OrgId\": 1\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "4dadb862-af7a-4e73-9eb3-99dd07d68622",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "7bab8bf5-20e5-460e-ba1e-e28d3a646d8e",
+    "name": "Get Current Organization",
+    "url": "{{baseUrl}}/api/org/",
+    "method": "GET",
+    "sortNum": 40000,
+    "created": "2022-06-17T11:21:28.941Z",
+    "modified": "2022-06-19T15:22:46.572Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "26332758-a453-44ed-98e9-16a9fe695d7b",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "7bab8bf5-20e5-460e-ba1e-e28d3a646d8e",
+    "name": "Get all users within the current organization",
+    "url": "{{baseUrl}}/api/org/users",
+    "method": "GET",
+    "sortNum": 50000,
+    "created": "2022-06-17T11:21:28.942Z",
+    "modified": "2022-06-17T11:21:28.942Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "d6ce89b6-cbd3-41cb-86c4-585b63648f0f",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "7bab8bf5-20e5-460e-ba1e-e28d3a646d8e",
+    "name": "Get all users within the current organization (lookup)",
+    "url": "{{baseUrl}}/api/org/users/lookup",
+    "method": "GET",
+    "sortNum": 60000,
+    "created": "2022-06-17T11:21:28.943Z",
+    "modified": "2022-06-17T11:21:28.943Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "4194bb10-4a6f-43d1-b615-8f0ee454186d",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "7bab8bf5-20e5-460e-ba1e-e28d3a646d8e",
+    "name": "Updates the given user",
+    "url": "{{baseUrl}}/api/org/users/{{userId}}",
+    "method": "PATCH",
+    "sortNum": 70000,
+    "created": "2022-06-17T11:21:28.944Z",
+    "modified": "2022-06-19T15:30:50.627Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"role\": \"Admin\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "1724d282-86bc-4eca-8e0f-e87bb87c436d",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "7bab8bf5-20e5-460e-ba1e-e28d3a646d8e",
+    "name": "Delete user in current organization",
+    "url": "{{baseUrl}}/api/org/users/{{userId}}",
+    "method": "DELETE",
+    "sortNum": 75000,
+    "created": "2022-06-17T11:21:28.945Z",
+    "modified": "2022-06-19T15:32:10.490Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "f8fb6fd0-fea9-4148-b46b-41aaf07852f9",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "7bab8bf5-20e5-460e-ba1e-e28d3a646d8e",
+    "name": "Update current Organization",
+    "url": "{{baseUrl}}/api/org",
+    "method": "PUT",
+    "sortNum": 80000,
+    "created": "2022-06-17T11:21:28.946Z",
+    "modified": "2022-06-17T11:21:28.946Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\":\"Main Org.\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "df275925-5b01-4eb6-a700-d7b466992dcf",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "7bab8bf5-20e5-460e-ba1e-e28d3a646d8e",
+    "name": "Add a new user to the current organization",
+    "url": "{{baseUrl}}/api/org/users",
+    "method": "POST",
+    "sortNum": 90000,
+    "created": "2022-06-17T11:21:28.947Z",
+    "modified": "2022-06-17T11:21:28.947Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"role\": \"Admin\",\n  \"loginOrEmail\": \"admin\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "ed10403a-9061-4514-afe1-fe6a1ffaecbb",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "7bab8bf5-20e5-460e-ba1e-e28d3a646d8e",
+    "name": "Get Organization by Id",
+    "url": "{{baseUrl}}/api/orgs/{{orgId}}",
+    "method": "GET",
+    "sortNum": 100000,
+    "created": "2022-06-17T11:21:28.948Z",
+    "modified": "2022-06-19T15:33:06.167Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "dfb5d1cc-0017-4d33-97f7-b695c8325abd",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "7bab8bf5-20e5-460e-ba1e-e28d3a646d8e",
+    "name": "Get Organization by Name",
+    "url": "{{baseUrl}}/api/orgs/name/{{orgName}}",
+    "method": "GET",
+    "sortNum": 110000,
+    "created": "2022-06-17T11:21:28.949Z",
+    "modified": "2022-06-19T15:35:13.156Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "0e53aebc-2df0-43a4-b224-66ccba088eba",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "7bab8bf5-20e5-460e-ba1e-e28d3a646d8e",
+    "name": "Create Organization",
+    "url": "{{baseUrl}}/api/orgs",
+    "method": "POST",
+    "sortNum": 115000,
+    "created": "2022-06-17T11:21:28.950Z",
+    "modified": "2022-06-19T15:35:42.953Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\":\"New Org.\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "58bbf60f-f3ed-4ce1-9402-ae93342db7bb",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "7bab8bf5-20e5-460e-ba1e-e28d3a646d8e",
+    "name": "Search all Organizations",
+    "url": "{{baseUrl}}/api/orgs?perpage=1000&page=0",
+    "method": "GET",
+    "sortNum": 117500,
+    "created": "2022-06-17T11:21:28.951Z",
+    "modified": "2022-06-19T15:36:36.422Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [
+      {
+        "name": "perpage",
+        "value": "1000",
+        "isPath": false
+      },
+      {
+        "name": "page",
+        "value": "0",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "743c42bc-03e9-4ac3-b531-0fda10dc3829",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "7bab8bf5-20e5-460e-ba1e-e28d3a646d8e",
+    "name": "Update Organization",
+    "url": "{{baseUrl}}/api/orgs/{{orgId}}",
+    "method": "PUT",
+    "sortNum": 120000,
+    "created": "2022-06-17T11:21:28.952Z",
+    "modified": "2022-06-19T15:37:26.357Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\":\"New User\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "5ba3aeab-0a5c-44c1-bf63-9c3d122b2376",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "7bab8bf5-20e5-460e-ba1e-e28d3a646d8e",
+    "name": "Delete Organization",
+    "url": "{{baseUrl}}/api/orgs/{{orgId}}",
+    "method": "DELETE",
+    "sortNum": 130000,
+    "created": "2022-06-17T11:21:28.953Z",
+    "modified": "2022-06-19T15:37:53.837Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "651be908-d03c-4582-9b8b-223008b022f0",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "7bab8bf5-20e5-460e-ba1e-e28d3a646d8e",
+    "name": "Get Users in Organization",
+    "url": "{{baseUrl}}/api/orgs/{{orgId}}/users",
+    "method": "GET",
+    "sortNum": 140000,
+    "created": "2022-06-17T11:21:28.954Z",
+    "modified": "2022-06-19T15:38:10.261Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "b78fe139-25ec-4726-8954-2d6d93ee692d",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "7bab8bf5-20e5-460e-ba1e-e28d3a646d8e",
+    "name": "Add User in Organization",
+    "url": "{{baseUrl}}/api/orgs/{{orgId}}/users",
+    "method": "POST",
+    "sortNum": 150000,
+    "created": "2022-06-17T11:21:28.955Z",
+    "modified": "2022-06-19T15:38:30.020Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"loginOrEmail\":\"admin\",\n  \"role\":\"Admin\"\n}\n",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "c4c864b7-df83-449e-ae82-07242d39ca67",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "7bab8bf5-20e5-460e-ba1e-e28d3a646d8e",
+    "name": "Update Users in Organization",
+    "url": "{{baseUrl}}/api/orgs/{{orgId}}/users/{{userId}}",
+    "method": "PATCH",
+    "sortNum": 160000,
+    "created": "2022-06-17T11:21:28.956Z",
+    "modified": "2022-06-19T15:38:55.924Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"role\":\"Admin\"\n}\n",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "845649a6-df8b-4e4c-9a86-a0910c847e85",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "7bab8bf5-20e5-460e-ba1e-e28d3a646d8e",
+    "name": "Delete User in Organization",
+    "url": "{{baseUrl}}/api/orgs/{{orgId}}/users/{{userId}}",
+    "method": "DELETE",
+    "sortNum": 170000,
+    "created": "2022-06-17T11:21:28.957Z",
+    "modified": "2022-06-19T15:39:52.660Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "7bab8bf5-20e5-460e-ba1e-e28d3a646d8e",
+    "name": "/api/orgs",
+    "url": "{{baseUrl}}/api/orgs",
+    "method": "GET",
+    "sortNum": 118750,
+    "created": "2022-06-17T11:47:17.762Z",
+    "modified": "2022-06-17T11:48:14.080Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "d32dfb6b-65e4-4b4e-8e59-366c02d77276",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "b137478d-7d03-4249-b13e-3ea9fb404fae",
+    "name": "Update Settings",
+    "url": "{{baseUrl}}/api/admin/settings",
+    "method": "PUT",
+    "sortNum": 12500,
+    "created": "2022-06-18T16:09:48.666Z",
+    "modified": "2022-06-18T16:10:35.946Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json",
+        "isDisabled": true
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json",
+        "isDisabled": true
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"updates\": {\n        \"explore\": {\n            \"enabled\": \"true\"\n        }\n    }\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "8dbaa904-771b-4083-af8b-0fc72934dba7",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "b137478d-7d03-4249-b13e-3ea9fb404fae",
+    "name": "Password for User",
+    "url": "{{baseUrl}}/api/admin/users/{{userId}}/password",
+    "method": "PUT",
+    "sortNum": 30000,
+    "created": "2022-06-18T16:13:01.840Z",
+    "modified": "2022-06-18T16:14:42.649Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\"password\":\"userpassword\"}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "266794c4-1fb3-43da-9794-3fb6e72fa693",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "b137478d-7d03-4249-b13e-3ea9fb404fae",
+    "name": "Permissions",
+    "url": "{{baseUrl}}/api/admin/users/{{userId}}/permissions",
+    "method": "PUT",
+    "sortNum": 40000,
+    "created": "2022-06-18T16:15:35.086Z",
+    "modified": "2022-06-18T16:16:12.466Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\"isGrafanaAdmin\": true}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "ecefd471-00f7-4f5a-8fc1-23dcaae794d2",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "b137478d-7d03-4249-b13e-3ea9fb404fae",
+    "name": "Pause all alerts",
+    "url": "{{baseUrl}}/api/admin/pause-all-alerts",
+    "method": "POST",
+    "sortNum": 70000,
+    "created": "2022-06-18T16:16:20.295Z",
+    "modified": "2022-06-18T16:17:54.917Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"paused\": true\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "9e52588f-3e82-4ee5-9c12-96d4c097a2c9",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "b137478d-7d03-4249-b13e-3ea9fb404fae",
+    "name": "Delete global User",
+    "url": "{{baseUrl}}/api/admin/users/{{userId}}",
+    "method": "DELETE",
+    "sortNum": 60000,
+    "created": "2022-06-18T16:16:55.717Z",
+    "modified": "2022-06-18T16:16:55.717Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "13c26dbd-9af2-43e6-b1a7-0a3780de0a2c",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "b137478d-7d03-4249-b13e-3ea9fb404fae",
+    "name": "Auth tokens for User",
+    "url": "{{baseUrl}}/api/admin/users/{{userId}}/auth-tokens",
+    "method": "GET",
+    "sortNum": 80000,
+    "created": "2022-06-18T16:18:22.238Z",
+    "modified": "2022-06-18T16:18:57.752Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "f4b5abc3-edbb-4a7d-bb22-4679258bfc02",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "b137478d-7d03-4249-b13e-3ea9fb404fae",
+    "name": "Revoke auth token for User",
+    "url": "{{baseUrl}}/api/admin/users/{{userId}}/revoke-auth-tokens",
+    "method": "POST",
+    "sortNum": 90000,
+    "created": "2022-06-18T16:19:06.657Z",
+    "modified": "2022-06-18T16:19:43.544Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"authTokenId\": 364\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "45296f25-4fc0-47d6-a00b-e25151029e39",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "b137478d-7d03-4249-b13e-3ea9fb404fae",
+    "name": "Logout User",
+    "url": "{{baseUrl}}/api/admin/users/{{userId}}/logout",
+    "method": "POST",
+    "sortNum": 100000,
+    "created": "2022-06-18T16:19:55.414Z",
+    "modified": "2022-06-18T16:22:18.895Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "7d064695-65fd-423f-8875-38babaafdb9f",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "b137478d-7d03-4249-b13e-3ea9fb404fae",
+    "name": "Reload dashboard provisioning configuration",
+    "url": "{{baseUrl}}/api/admin/provisioning/dashboards/reload",
+    "method": "POST",
+    "sortNum": 110000,
+    "created": "2022-06-18T16:21:50.029Z",
+    "modified": "2022-06-18T16:22:34.863Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "350e1f5a-04ff-4f90-abe9-b1ebc2bfa145",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "b137478d-7d03-4249-b13e-3ea9fb404fae",
+    "name": "Reload datasources provisioning configuration",
+    "url": "{{baseUrl}}/api/admin/provisioning/datasources/reload",
+    "method": "POST",
+    "sortNum": 120000,
+    "created": "2022-06-18T16:22:52.517Z",
+    "modified": "2022-06-18T16:23:19.389Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "12bb6297-c6a7-4f49-89ff-0b2e9f0cc080",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "b137478d-7d03-4249-b13e-3ea9fb404fae",
+    "name": "Reload plugins provisioning configuration",
+    "url": "{{baseUrl}}/api/admin/provisioning/plugins/reload",
+    "method": "POST",
+    "sortNum": 130000,
+    "created": "2022-06-18T16:22:54.612Z",
+    "modified": "2022-06-18T16:24:21.862Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "aa7c95c6-e9c6-4fd8-9d5b-d08ee6cbe534",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "b137478d-7d03-4249-b13e-3ea9fb404fae",
+    "name": "Reload notifications provisioning configuration",
+    "url": "{{baseUrl}}/api/admin/provisioning/notifications/reload",
+    "method": "POST",
+    "sortNum": 140000,
+    "created": "2022-06-18T16:22:56.998Z",
+    "modified": "2022-06-18T16:24:27.878Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "3f056992-e8c4-4d75-b5d3-b57af8444ad9",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "b137478d-7d03-4249-b13e-3ea9fb404fae",
+    "name": "Reload access-control provisioning configuration",
+    "url": "{{baseUrl}}/api/admin/provisioning/access-control/reload",
+    "method": "POST",
+    "sortNum": 150000,
+    "created": "2022-06-18T16:22:59.384Z",
+    "modified": "2022-06-18T16:24:39.334Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "0eb5f6dc-b936-48f3-8c15-3e3c1d04d56e",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "b137478d-7d03-4249-b13e-3ea9fb404fae",
+    "name": "Reload LDAP configuration",
+    "url": "{{baseUrl}}/api/admin/ldap/reload",
+    "method": "POST",
+    "sortNum": 160000,
+    "created": "2022-06-18T16:25:03.709Z",
+    "modified": "2022-06-18T16:25:47.111Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "e5d96f53-6875-4a8f-b2e3-9955d8118108",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "b137478d-7d03-4249-b13e-3ea9fb404fae",
+    "name": "Rotate data encryption keys",
+    "url": "{{baseUrl}}/api/admin/encryption/rotate-data-keys",
+    "method": "POST",
+    "sortNum": 170000,
+    "created": "2022-06-18T16:25:06.451Z",
+    "modified": "2022-06-18T16:25:58.421Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  }
+]

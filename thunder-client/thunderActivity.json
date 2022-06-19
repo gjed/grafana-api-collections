@@ -1,0 +1,420 @@
+[
+  {
+    "_id": "74444fab-99b6-4f76-94f0-d28320b1f9f3",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{baseUrl}}/api/admin/settings",
+    "url": "{{baseUrl}}/api/admin/settings",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-06-17T11:40:58.369Z",
+    "modified": "2022-06-18T16:07:21.766Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json",
+        "isDisabled": true
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json",
+        "isDisabled": true
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "52ea7c07-34ad-4ad6-8e86-76782cf48bf3",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{baseUrl}}/api/orgs",
+    "url": "{{baseUrl}}/api/orgs",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-06-17T11:47:40.254Z",
+    "modified": "2022-06-17T11:49:50.386Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "181a0bc7-312a-479d-baf2-6661d76767f3",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{baseUrl}}/api/admin/usage-report-preview",
+    "url": "{{baseUrl}}/api/admin/usage-report-preview",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-06-18T16:11:39.028Z",
+    "modified": "2022-06-18T16:12:42.842Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json",
+        "isDisabled": true
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json",
+        "isDisabled": true
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "6a87da4a-48a2-4867-a281-cc207099e864",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{baseUrl}}/api/admin/stats",
+    "url": "{{baseUrl}}/api/admin/stats",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-06-18T16:11:58.544Z",
+    "modified": "2022-06-18T16:11:58.645Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json",
+        "isDisabled": true
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json",
+        "isDisabled": true
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "0d12a75a-a4fa-4222-92a3-e5d89e036f99",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{baseUrl}}/api/admin/users/{{userId}}/password",
+    "url": "{{baseUrl}}/api/admin/users/{{userId}}/password",
+    "method": "PUT",
+    "sortNum": 0,
+    "created": "2022-06-18T16:14:56.562Z",
+    "modified": "2022-06-18T16:15:16.216Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\"password\":\"userpassword\"}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "ffeb63a7-fff1-44c2-a498-b3a57c003994",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{baseUrl}}/api/admin/provisioning/dashboards/reload",
+    "url": "{{baseUrl}}/api/admin/provisioning/dashboards/reload",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-06-18T16:22:36.865Z",
+    "modified": "2022-06-18T16:22:36.992Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "ab73f76f-fc68-4b9e-b466-f750c183aec4",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{baseUrl}}/api/admin/provisioning/datasources/reload",
+    "url": "{{baseUrl}}/api/admin/provisioning/datasources/reload",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-06-18T16:23:18.959Z",
+    "modified": "2022-06-18T16:23:19.389Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "a5baecda-369f-40ac-8a26-58d93d810fd5",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{baseUrl}}/api/admin/provisioning/plugins/reload",
+    "url": "{{baseUrl}}/api/admin/provisioning/plugins/reload",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-06-18T16:23:38.793Z",
+    "modified": "2022-06-18T16:23:38.869Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "d7f95bce-a281-41a1-b8e1-b89d95b79416",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{baseUrl}}/api/admin/provisioning/notifications/reload",
+    "url": "{{baseUrl}}/api/admin/provisioning/notifications/reload",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-06-18T16:24:06.231Z",
+    "modified": "2022-06-18T16:24:28.667Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "38953af1-9cbd-4ae2-ab71-495e48e73e62",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{baseUrl}}/api/admin/provisioning/access-control/reload",
+    "url": "{{baseUrl}}/api/admin/provisioning/access-control/reload",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-06-18T16:24:51.644Z",
+    "modified": "2022-06-18T16:24:51.713Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "8858258a-afe9-4548-966a-23f0bf9e139e",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{baseUrl}}/api/admin/ldap/reload",
+    "url": "{{baseUrl}}/api/admin/ldap/reload",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-06-18T16:25:48.070Z",
+    "modified": "2022-06-18T16:25:48.139Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "90faa869-2b9f-4a22-a66c-85126aaa1e75",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{baseUrl}}/api/admin/encryption/rotate-data-keys",
+    "url": "{{baseUrl}}/api/admin/encryption/rotate-data-keys",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-06-18T16:25:58.350Z",
+    "modified": "2022-06-18T16:25:58.422Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "f55ca533-f037-4f57-9f3a-a381875e54b0",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{baseUrl}}/api/org/",
+    "url": "{{baseUrl}}/api/org/",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-06-19T15:28:05.314Z",
+    "modified": "2022-06-19T15:29:40.973Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "77c17d24-5b7c-462f-a0bf-0c948c89b2d2",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{baseUrl}}/api/org/users",
+    "url": "{{baseUrl}}/api/org/users",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-06-19T15:30:10.776Z",
+    "modified": "2022-06-19T15:30:10.846Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "b7d1f8f8-c605-421f-a5bb-ade9a2324725",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{baseUrl}}/api/org/users/{{userId}}",
+    "url": "{{baseUrl}}/api/org/users/{{userId}}",
+    "method": "PATCH",
+    "sortNum": 0,
+    "created": "2022-06-19T15:30:50.555Z",
+    "modified": "2022-06-19T15:30:50.627Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"role\": \"Admin\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "f011e6e7-417e-413c-999e-f8093d4b400e",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{baseUrl}}/api/orgs/{{orgId}}",
+    "url": "{{baseUrl}}/api/orgs/{{orgId}}",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-06-19T15:33:06.097Z",
+    "modified": "2022-06-19T15:34:10.902Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "1d84358c-87c4-41ef-9367-7226ae17e488",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{baseUrl}}/api/orgs?perpage=1000&page=0",
+    "url": "{{baseUrl}}/api/orgs?perpage=1000&page=0",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-06-19T15:36:36.349Z",
+    "modified": "2022-06-19T15:36:36.423Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [
+      {
+        "name": "perpage",
+        "value": "1000",
+        "isPath": false
+      },
+      {
+        "name": "page",
+        "value": "0",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  }
+]

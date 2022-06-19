@@ -1,0 +1,47 @@
+[
+  {
+    "_id": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "colName": "Grafana",
+    "created": "2022-06-17T11:21:28.923Z",
+    "sortNum": 10000,
+    "folders": [
+      {
+        "_id": "b137478d-7d03-4249-b13e-3ea9fb404fae",
+        "name": "Admin API",
+        "containerId": "",
+        "created": "2022-06-17T11:21:28.930Z",
+        "sortNum": 10000,
+        "settings": {
+          "headers": [],
+          "auth": {
+            "type": "basic",
+            "basic": {
+              "username": "admin",
+              "password": "admin"
+            }
+          },
+          "tests": []
+        }
+      },
+      {
+        "_id": "7bab8bf5-20e5-460e-ba1e-e28d3a646d8e",
+        "name": "Organization API",
+        "containerId": "",
+        "created": "2022-06-17T11:21:28.932Z",
+        "sortNum": 30000
+      }
+    ],
+    "settings": {
+      "headers": [],
+      "auth": {
+        "type": "basic",
+        "basic": {
+          "username": "{{adminUsername}}",
+          "password": "{{adminPassword}}"
+        }
+      },
+      "tests": [],
+      "envId": "b2ef8c54-aa24-48ae-9701-8e609d449c8e"
+    }
+  }
+]
