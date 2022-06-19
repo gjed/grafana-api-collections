@@ -928,5 +928,444 @@
     ],
     "params": [],
     "tests": []
+  },
+  {
+    "_id": "6f3b9ff0-e073-440c-8a27-bd00c8775d92",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "00cfec63-f467-4d97-9cc9-e250f0bf1214",
+    "name": "Search Users",
+    "url": "{{baseUrl}}/api/users?perpage=1000&page=1",
+    "method": "GET",
+    "sortNum": 180000,
+    "created": "2022-06-19T17:07:34.175Z",
+    "modified": "2022-06-19T17:08:49.394Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [
+      {
+        "name": "perpage",
+        "value": "1000",
+        "isPath": false
+      },
+      {
+        "name": "page",
+        "value": "1",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "8ca5d794-4126-4154-adf1-bc4bccf24c0a",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "00cfec63-f467-4d97-9cc9-e250f0bf1214",
+    "name": "Search Users with Paging",
+    "url": "{{baseUrl}}/api/users/search?perpage=1000&page=1&query=admin",
+    "method": "GET",
+    "sortNum": 190000,
+    "created": "2022-06-19T17:09:05.466Z",
+    "modified": "2022-06-19T17:10:59.322Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [
+      {
+        "name": "perpage",
+        "value": "1000",
+        "isPath": false
+      },
+      {
+        "name": "page",
+        "value": "1",
+        "isPath": false
+      },
+      {
+        "name": "query",
+        "value": "admin",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "bca2c107-b416-4c76-8a17-088ee979e471",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "00cfec63-f467-4d97-9cc9-e250f0bf1214",
+    "name": "Get single user by Id",
+    "url": "{{baseUrl}}/api/users/{{userId}}",
+    "method": "GET",
+    "sortNum": 200000,
+    "created": "2022-06-19T17:11:06.782Z",
+    "modified": "2022-06-19T17:11:35.809Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "a25bb5f3-e749-43a4-80b6-68ab824806a9",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "00cfec63-f467-4d97-9cc9-e250f0bf1214",
+    "name": "Get single user by Username(login) or Email",
+    "url": "{{baseUrl}}/api/users/lookup?loginOrEmail={{adminUsername}}",
+    "method": "GET",
+    "sortNum": 210000,
+    "created": "2022-06-19T17:11:55.894Z",
+    "modified": "2022-06-19T17:14:10.449Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [
+      {
+        "name": "loginOrEmail",
+        "value": "{{adminUsername}}",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "d7544042-dfcf-4fcd-9979-78d10ee34c96",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "00cfec63-f467-4d97-9cc9-e250f0bf1214",
+    "name": "User Update",
+    "url": "{{baseUrl}}/api/users/{{userId}}",
+    "method": "PUT",
+    "sortNum": 220000,
+    "created": "2022-06-19T17:13:13.200Z",
+    "modified": "2022-06-19T17:15:22.797Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"email\":\"user@mygraf.com\",\n  \"name\":\"User2\",\n  \"login\":\"user\",\n  \"theme\":\"light\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "e5f1b7d8-3c10-4aa8-85d8-03e3015334b6",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "00cfec63-f467-4d97-9cc9-e250f0bf1214",
+    "name": "Get Organizations for user",
+    "url": "{{baseUrl}}/api/users/{{userId}}/orgs",
+    "method": "GET",
+    "sortNum": 230000,
+    "created": "2022-06-19T17:14:24.394Z",
+    "modified": "2022-06-19T17:15:42.558Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "be4c70f8-e055-40c7-acff-494b441c615b",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "00cfec63-f467-4d97-9cc9-e250f0bf1214",
+    "name": "Get Teams for user",
+    "url": "{{baseUrl}}/api/users/{{userId}}/teams",
+    "method": "GET",
+    "sortNum": 240000,
+    "created": "2022-06-19T17:15:46.131Z",
+    "modified": "2022-06-19T17:16:00.901Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "fa4c3212-cbd5-4076-b83c-71cf1d653f57",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "00cfec63-f467-4d97-9cc9-e250f0bf1214",
+    "name": "Get Actual User",
+    "url": "{{baseUrl}}/api/user/password",
+    "method": "PUT",
+    "sortNum": 250000,
+    "created": "2022-06-19T17:16:50.503Z",
+    "modified": "2022-06-19T17:18:30.693Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"oldPassword\": \"{{adminPassword}}\",\n  \"newPassword\": \"{{adminPassword}}\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "6137a3ba-ba1d-41ff-8017-a99a4c97b055",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "00cfec63-f467-4d97-9cc9-e250f0bf1214",
+    "name": "Change Password",
+    "url": "{{baseUrl}}/api/users/{{userId}}/teams",
+    "method": "GET",
+    "sortNum": 260000,
+    "created": "2022-06-19T17:16:52.485Z",
+    "modified": "2022-06-19T17:16:52.485Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "8b54f60c-0654-4674-b8fd-7bf28d4479f9",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "00cfec63-f467-4d97-9cc9-e250f0bf1214",
+    "name": "Switch user context for a specified user",
+    "url": "{{baseUrl}}/api/users/{{userId}}/using/{{orgId}}",
+    "method": "POST",
+    "sortNum": 270000,
+    "created": "2022-06-19T17:16:54.056Z",
+    "modified": "2022-06-19T17:19:25.958Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "ebbcfbbf-82fe-4234-9208-fb288c1abc42",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "00cfec63-f467-4d97-9cc9-e250f0bf1214",
+    "name": "Switch user context for signed in user",
+    "url": "{{baseUrl}}/api/user/{{userId}}/using/{{orgId}}",
+    "method": "POST",
+    "sortNum": 280000,
+    "created": "2022-06-19T17:19:40.671Z",
+    "modified": "2022-06-19T17:21:45.755Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "1794e2f9-cc1b-4cdd-9bc9-c9ed95380bd8",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "00cfec63-f467-4d97-9cc9-e250f0bf1214",
+    "name": "Organizations of the actual User",
+    "url": "{{baseUrl}}/api/user/orgs",
+    "method": "GET",
+    "sortNum": 290000,
+    "created": "2022-06-19T17:19:42.220Z",
+    "modified": "2022-06-19T17:22:00.753Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "7464c187-743f-4f35-bef4-e9073cb47a01",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "00cfec63-f467-4d97-9cc9-e250f0bf1214",
+    "name": "Teams that the actual User is member of",
+    "url": "{{baseUrl}}/api/user/teams",
+    "method": "GET",
+    "sortNum": 300000,
+    "created": "2022-06-19T17:20:35.260Z",
+    "modified": "2022-06-19T17:21:12.175Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "8da3767f-7579-497c-aed5-96711aac32bd",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "00cfec63-f467-4d97-9cc9-e250f0bf1214",
+    "name": "Star a dashboard",
+    "url": "{{baseUrl}}/api/user/stars/dashboard/{{dashboardId}}",
+    "method": "POST",
+    "sortNum": 310000,
+    "created": "2022-06-19T17:20:36.981Z",
+    "modified": "2022-06-19T17:25:16.980Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "a122ed45-fce8-4a25-9ee0-c7b8caa27b41",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "00cfec63-f467-4d97-9cc9-e250f0bf1214",
+    "name": "Unstar a dashboard",
+    "url": "{{baseUrl}}/api/user/stars/dashboard/{{dashboardId}}",
+    "method": "DELETE",
+    "sortNum": 320000,
+    "created": "2022-06-19T17:20:38.491Z",
+    "modified": "2022-06-19T17:27:53.153Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "51d45e6f-5a7d-4511-a345-b6c6214cbdb3",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "00cfec63-f467-4d97-9cc9-e250f0bf1214",
+    "name": "Auth tokens of the actual User",
+    "url": "{{baseUrl}}/api/user/revoke-auth-token",
+    "method": "POST",
+    "sortNum": 330000,
+    "created": "2022-06-19T17:26:31.584Z",
+    "modified": "2022-06-19T17:28:52.634Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"authTokenId\": 364\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "0693295e-a551-4c95-ac13-a0632e40d4f2",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "00cfec63-f467-4d97-9cc9-e250f0bf1214",
+    "name": "Revoke an auth token of the actual User",
+    "url": "{{baseUrl}}/api/user/auth-tokens",
+    "method": "GET",
+    "sortNum": 340000,
+    "created": "2022-06-19T17:28:12.202Z",
+    "modified": "2022-06-19T17:28:12.202Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
   }
 ]
