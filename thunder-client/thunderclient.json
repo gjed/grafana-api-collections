@@ -2161,5 +2161,307 @@
     ],
     "params": [],
     "tests": []
+  },{
+    "_id": "e9c5ef75-4ed6-4ba2-ad9d-81955fad52c5",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "e2719f30-c6aa-4381-a2c3-2f27af4e0e75",
+    "name": "Get Settings",
+    "url": "{{baseUrl}}/api/frontend/settings",
+    "method": "GET",
+    "sortNum": 200000,
+    "created": "2022-06-20T11:21:23.093Z",
+    "modified": "2022-06-20T11:21:45.506Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "14294e97-176a-4be0-87be-9884a0e1d26b",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "e2719f30-c6aa-4381-a2c3-2f27af4e0e75",
+    "name": "Renew session based on remember cookie",
+    "url": "{{baseUrl}}/api/login/ping",
+    "method": "GET",
+    "sortNum": 210000,
+    "created": "2022-06-20T11:21:52.794Z",
+    "modified": "2022-06-20T11:23:01.926Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "604ed404-a8d3-4786-807a-7f28f4adf509",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "e2719f30-c6aa-4381-a2c3-2f27af4e0e75",
+    "name": "Get health information about Grafana",
+    "url": "{{baseUrl}}/api/health",
+    "method": "GET",
+    "sortNum": 220000,
+    "created": "2022-06-20T11:22:22.649Z",
+    "modified": "2022-06-20T11:23:09.840Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "b6d90eab-16f7-4379-93ae-0ff0017fda56",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "05e69836-2552-4136-a588-165faf15d007",
+    "name": "Find Annotations",
+    "url": "{{baseUrl}}/api/annotations?from=1506616478816&to=1655730899178&limit=100",
+    "method": "GET",
+    "sortNum": 220000,
+    "created": "2022-06-20T13:00:08.859Z",
+    "modified": "2022-06-20T13:08:35.344Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [
+      {
+        "name": "from",
+        "value": "1506616478816",
+        "isPath": false
+      },
+      {
+        "name": "to",
+        "value": "1655730899178",
+        "isPath": false
+      },
+      {
+        "name": "limit",
+        "value": "100",
+        "isPath": false
+      },
+      {
+        "name": "dashboardId",
+        "value": "{{dashboardId}}",
+        "isDisabled": true,
+        "isPath": false
+      },
+      {
+        "name": "panelId",
+        "value": "1",
+        "isDisabled": true,
+        "isPath": false
+      },
+      {
+        "name": "userId",
+        "value": "{{userId}}",
+        "isDisabled": true,
+        "isPath": false
+      },
+      {
+        "name": "type",
+        "value": "",
+        "isDisabled": true,
+        "isPath": false
+      },
+      {
+        "name": "tag",
+        "value": "tag1",
+        "isDisabled": true,
+        "isPath": false
+      },
+      {
+        "name": "tag",
+        "value": "tag2",
+        "isDisabled": true,
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "10fa1c40-1eb0-49d8-b9c3-13daa930028e",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "05e69836-2552-4136-a588-165faf15d007",
+    "name": "Create Annotation",
+    "url": "{{baseUrl}}/api/annotations",
+    "method": "POST",
+    "sortNum": 230000,
+    "created": "2022-06-20T13:01:19.282Z",
+    "modified": "2022-06-20T13:11:17.400Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"dashboardUID\":\"{{dashboardUid}}\",\n  \"panelId\":2,\n  \"time\":1655729999178,\n  \"timeEnd\":1655730299178,\n  \"tags\":[\"tag1\",\"tag2\"],\n  \"text\":\"Annotation Description 2\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "9ced5193-d6d0-4a74-9c2a-b53ada9f22d3",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "05e69836-2552-4136-a588-165faf15d007",
+    "name": "Create Annotation in Graphite format",
+    "url": "{{baseUrl}}/api/annotations/graphite",
+    "method": "POST",
+    "sortNum": 240000,
+    "created": "2022-06-20T13:01:21.449Z",
+    "modified": "2022-06-20T13:12:20.606Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"what\": \"Event - deploy\",\n  \"tags\": [\"deploy\", \"production\"],\n  \"when\": 1655730731431,\n  \"data\": \"deploy of master branch happened at Wed Jul 6 22:34:41 UTC 2016\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "2b45a38a-21fd-4269-87a8-75f5e075e609",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "05e69836-2552-4136-a588-165faf15d007",
+    "name": "Update Annotation",
+    "url": "{{baseUrl}}/api/annotations/{{annotationId}}",
+    "method": "PUT",
+    "sortNum": 250000,
+    "created": "2022-06-20T13:01:22.769Z",
+    "modified": "2022-06-20T13:13:34.496Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"time\":1507037197339,\n  \"timeEnd\":1507180805056,\n  \"text\":\"Annotation Description\",\n  \"tags\":[\"tag3\",\"tag4\",\"tag5\"]\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "ac842e34-9c98-4a5c-bcb9-bd5940c5154b",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "05e69836-2552-4136-a588-165faf15d007",
+    "name": "Patch Annotation",
+    "url": "{{baseUrl}}/api/annotations/{{annotationId}}",
+    "method": "PATCH",
+    "sortNum": 260000,
+    "created": "2022-06-20T13:01:24.530Z",
+    "modified": "2022-06-20T13:14:08.704Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"text\":\"New Annotation Description\",\n  \"tags\":[\"tag6\",\"tag7\",\"tag8\"]\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "361f7033-7adb-4905-aa49-4358c77a6050",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "05e69836-2552-4136-a588-165faf15d007",
+    "name": "Delete Annotation By Id",
+    "url": "{{baseUrl}}/api/annotations/{{annotationId}}",
+    "method": "DELETE",
+    "sortNum": 270000,
+    "created": "2022-06-20T13:14:16.088Z",
+    "modified": "2022-06-20T13:14:32.199Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "a2beacf9-6934-4002-b37a-2b38e93103a7",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "05e69836-2552-4136-a588-165faf15d007",
+    "name": "Find Annotations Tags",
+    "url": "{{baseUrl}}/api/annotations/tags",
+    "method": "GET",
+    "sortNum": 280000,
+    "created": "2022-06-20T13:14:17.776Z",
+    "modified": "2022-06-20T13:14:59.367Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
   }
+
 ]
