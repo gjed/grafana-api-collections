@@ -1,2 +1,6 @@
 # thunder
-**/thunderActivity.json
+thunder-client/.env
+thunder-client/thunderActivity.json
+
+# rest
+rest-client/.env

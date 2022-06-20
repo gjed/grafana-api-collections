@@ -1,0 +1,190 @@
+# Admin API 
+# see: https://grafana.com/docs/grafana/next/developers/http_api/admin/
+
+# Fetch settings
+GET {{$dotenv baseUrl}}/api/admin/settings
+Accept: application/json
+Content-Type: application/json
+Authorization: Basic {{$dotenv adminUsername}} {{$dotenv adminPassword}}
+
+###
+
+# Update settings
+PUT {{$dotenv baseUrl}}/api/admin/settings
+Accept: application/json
+Content-Type: application/json
+Authorization: Basic {{$dotenv adminUsername}} {{$dotenv adminPassword}}
+
+{
+  "updates": {
+    "auth.saml": {
+      "enabled": "false"
+    }
+  }
+}
+
+###
+
+# Grafana Stats
+GET {{$dotenv baseUrl}}/api/admin/stats
+Accept: application/json
+Content-Type: application/json
+Authorization: Basic {{$dotenv adminUsername}} {{$dotenv adminPassword}}
+
+###
+
+# Grafana Usage Report preview
+GET {{$dotenv baseUrl}}/api/admin/usage-report-preview
+Accept: application/json
+Content-Type: application/json
+Authorization: Basic {{$dotenv adminUsername}} {{$dotenv adminPassword}}
+
+###
+
+# User variables
+@name = User
+@email = user@graf.com
+@login = new.user
+@password = ciao
+@orgId = 1
+@userId = 17
+
+###
+
+# Global Users
+POST {{$dotenv baseUrl}}/api/admin/users
+Accept: application/json
+Content-Type: application/json
+Authorization: Basic {{$dotenv adminUsername}} {{$dotenv adminPassword}}
+
+{
+  "name":"{{name}}",
+  "email":"{{email}}",
+  "login":"{{login}}",
+  "password":"{{password}}",
+  "OrgId": {{orgId}}
+}
+
+###
+
+# Password for User
+
+PUT {{$dotenv baseUrl}}/api/admin/users/{{userId}}/password
+Accept: application/json
+Content-Type: application/json
+Authorization: Basic {{$dotenv adminUsername}} {{$dotenv adminPassword}}
+
+{"password":"{{password}}"}
+
+###
+
+# Password for User
+
+PUT {{$dotenv baseUrl}}/api/admin/users/{{userId}}/permissions
+Accept: application/json
+Content-Type: application/json
+Authorization: Basic {{$dotenv adminUsername}} {{$dotenv adminPassword}}
+
+{"isGrafanaAdmin": false}
+
+###
+
+# Delete global User
+DELETE  {{$dotenv baseUrl}}/api/admin/users/{{userId}}
+Accept: application/json
+Content-Type: application/json
+Authorization: Basic {{$dotenv adminUsername}} {{$dotenv adminPassword}}
+
+###
+
+# Auth tokens for User
+GET  {{$dotenv baseUrl}}/api/admin/users/{{userId}}/auth-tokens
+Accept: application/json
+Content-Type: application/json
+Authorization: Basic {{$dotenv adminUsername}} {{$dotenv adminPassword}}
+
+###
+
+# Revoke auth token for User
+POST  {{$dotenv baseUrl}}/api/admin/users/{{userId}}/revoke-auth-token
+Accept: application/json
+Content-Type: application/json
+Authorization: Basic {{$dotenv adminUsername}} {{$dotenv adminPassword}}
+
+{"authTokenId": 364}
+
+###
+
+# Logout User
+POST  {{$dotenv baseUrl}}/api/admin/users/{{userId}}/logout
+Accept: application/json
+Content-Type: application/json
+Authorization: Basic {{$dotenv adminUsername}} {{$dotenv adminPassword}}
+
+###
+
+# Pause all alerts
+POST  {{$dotenv baseUrl}}/api/admin/pause-all-alerts
+Accept: application/json
+Content-Type: application/json
+Authorization: Basic {{$dotenv adminUsername}} {{$dotenv adminPassword}}
+
+{"paused": false}
+
+###
+
+# Reload dashboards provisioning configuration
+POST  {{$dotenv baseUrl}}/api/admin/provisioning/dashboards/reload
+Accept: application/json
+Content-Type: application/json
+Authorization: Basic {{$dotenv adminUsername}} {{$dotenv adminPassword}}
+
+###
+
+# Reload datasources provisioning configuration
+POST  {{$dotenv baseUrl}}/api/admin/provisioning/datasources/reload
+Accept: application/json
+Content-Type: application/json
+Authorization: Basic {{$dotenv adminUsername}} {{$dotenv adminPassword}}
+
+###
+
+# Reload plugins provisioning configuration
+POST  {{$dotenv baseUrl}}/api/admin/provisioning/plugins/reload
+Accept: application/json
+Content-Type: application/json
+Authorization: Basic {{$dotenv adminUsername}} {{$dotenv adminPassword}}
+
+###
+
+# Reload notifications provisioning configuration
+POST  {{$dotenv baseUrl}}/api/admin/provisioning/notifications/reload
+Accept: application/json
+Content-Type: application/json
+Authorization: Basic {{$dotenv adminUsername}} {{$dotenv adminPassword}}
+
+###
+
+# Reload dasaccess-controlhboard provisioning configuration
+# nb: enterprise only
+POST  {{$dotenv baseUrl}}/api/admin/provisioning/access-control/reload
+Accept: application/json
+Content-Type: application/json
+Authorization: Basic {{$dotenv adminUsername}} {{$dotenv adminPassword}}
+
+###
+
+# Reload LDAP configuration
+POST  {{$dotenv baseUrl}}/api/admin/ldap/reload
+Accept: application/json
+Content-Type: application/json
+Authorization: Basic {{$dotenv adminUsername}} {{$dotenv adminPassword}}
+
+
+###
+
+# Rotate data encryption keys
+POST  {{$dotenv baseUrl}}/api/admin/encryption/rotate-data-keys
+Accept: application/json
+Content-Type: application/json
+Authorization: Basic {{$dotenv adminUsername}} {{$dotenv adminPassword}}
