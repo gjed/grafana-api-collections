@@ -1633,5 +1633,533 @@
       "form": []
     },
     "tests": []
+  },
+  {
+    "_id": "f570b1bf-67c2-4429-a5d9-d773b64d34b0",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "d6a95f65-efdc-45a0-956b-629398c5a629",
+    "name": "Create short URL",
+    "url": "{{baseUrl}}/api/short-urls",
+    "method": "POST",
+    "sortNum": 350000,
+    "created": "2022-06-20T09:20:43.906Z",
+    "modified": "2022-06-20T09:21:24.954Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"path\": \"d/TxKARsmGz/new-dashboard?orgId=1&from=1599389322894&to=1599410922894\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "e28434da-3542-4679-8cbe-97445e27f52f",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "53537d64-8c1f-4df5-8a73-2196f381fd49",
+    "name": "Get a specific alert rule by UID",
+    "url": "{{baseUrl}}/api/v1/provisioning/alert-rules/{{alertUid}}",
+    "method": "GET",
+    "sortNum": 370000,
+    "created": "2022-06-20T09:29:49.744Z",
+    "modified": "2022-06-20T09:30:54.656Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "ac4888a6-0e3c-44aa-b051-4f44afc7b2f2",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "53537d64-8c1f-4df5-8a73-2196f381fd49",
+    "name": "Create a new alert rule",
+    "url": "{{baseUrl}}/api/v1/provisioning/alert-rules",
+    "method": "POST",
+    "sortNum": 380000,
+    "created": "2022-06-20T09:31:18.071Z",
+    "modified": "2022-06-20T09:33:00.111Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "7d50f62e-4752-4f2e-855a-b9c9150cf5b9",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "53537d64-8c1f-4df5-8a73-2196f381fd49",
+    "name": "Update an existing alert rule",
+    "url": "{{baseUrl}}/api/v1/provisioning/alert-rules/{{alertUid}}",
+    "method": "PUT",
+    "sortNum": 390000,
+    "created": "2022-06-20T09:31:20.908Z",
+    "modified": "2022-06-20T09:36:24.519Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "9e1ce6b9-565c-4a5f-8767-e9c563f4e3b3",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "53537d64-8c1f-4df5-8a73-2196f381fd49",
+    "name": "Update the interval of a rule group",
+    "url": "{{baseUrl}}/api/v1/provisioning/alert-rules/{{alertUid}}",
+    "method": "GET",
+    "sortNum": 400000,
+    "created": "2022-06-20T09:31:23.478Z",
+    "modified": "2022-06-20T09:31:23.478Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "c60bbb3f-0b3a-4f5f-b64f-6be8d14fc415",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "53537d64-8c1f-4df5-8a73-2196f381fd49",
+    "name": "Delete a specific alert rule by UID",
+    "url": "{{baseUrl}}/api/v1/provisioning/alert-rules/{{alertUid}}",
+    "method": "DELETE",
+    "sortNum": 410000,
+    "created": "2022-06-20T09:31:25.378Z",
+    "modified": "2022-06-20T10:23:59.737Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "311d5817-a0d6-4ccb-ac77-a97f46ae6ac8",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "854ff41f-96b2-4493-8fe0-f1269a89adca",
+    "name": "Get all the contact points",
+    "url": "{{baseUrl}}/api/v1/provisioning/contact-points",
+    "method": "GET",
+    "sortNum": 10000,
+    "created": "2022-06-20T10:23:35.981Z",
+    "modified": "2022-06-20T10:24:31.549Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "c84a736f-d79a-422f-ad0f-51baf7285971",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "854ff41f-96b2-4493-8fe0-f1269a89adca",
+    "name": "Create a contact point",
+    "url": "{{baseUrl}}/api/v1/provisioning/contact-points",
+    "method": "POST",
+    "sortNum": 20000,
+    "created": "2022-06-20T10:24:13.987Z",
+    "modified": "2022-06-20T10:27:44.734Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"uid\": \"z42PiW3n2\",\n    \"name\": \"email receiver\",\n    \"type\": \"email\",\n    \"settings\": {\n      \"addresses\": \"<example@email.com>\"\n    },\n    \"disableResolveMessage\": false\n  }",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "13f2c361-1bde-4c85-bd72-9656cfe024ed",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "854ff41f-96b2-4493-8fe0-f1269a89adca",
+    "name": "Update an existing contact point",
+    "url": "{{baseUrl}}/api/v1/provisioning/contact-points/{{contactUid}}",
+    "method": "PUT",
+    "sortNum": 30000,
+    "created": "2022-06-20T10:24:15.681Z",
+    "modified": "2022-06-20T10:30:23.820Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"name\": \"email receiver\",\n    \"type\": \"email\",\n    \"settings\": {\n      \"addresses\": \"<example@email.com>\"\n    },\n    \"disableResolveMessage\": false\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "a9e90d2d-6efb-4c63-abc6-1c38ae077a97",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "854ff41f-96b2-4493-8fe0-f1269a89adca",
+    "name": "Delete a contact point",
+    "url": "{{baseUrl}}/api/v1/provisioning/contact-points/{{contactUid}}",
+    "method": "DELETE",
+    "sortNum": 40000,
+    "created": "2022-06-20T10:24:17.966Z",
+    "modified": "2022-06-20T10:30:38.301Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "2ce4c502-73be-4740-a800-57745474e1ff",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "dff457b9-151a-4e6e-b59f-50fbc55ead07",
+    "name": "Get the notification policy tree",
+    "url": "{{baseUrl}}/api/v1/provisioning/policies",
+    "method": "GET",
+    "sortNum": 10000,
+    "created": "2022-06-20T10:30:57.011Z",
+    "modified": "2022-06-20T10:31:30.524Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "165c3b13-2866-4d08-a290-4d8334acdc77",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "dff457b9-151a-4e6e-b59f-50fbc55ead07",
+    "name": "Sets the notification policy tree",
+    "url": "{{baseUrl}}/api/v1/provisioning/policies",
+    "method": "PUT",
+    "sortNum": 20000,
+    "created": "2022-06-20T10:31:01.432Z",
+    "modified": "2022-06-20T11:04:01.097Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"receiver\": \"grafana-default-email2\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "452683c6-c884-47c9-98d6-723f52e58f14",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "9813476d-05d3-42c2-aadc-d62105a106cc",
+    "name": "Get all the mute timings",
+    "url": "{{baseUrl}}/api/v1/provisioning/mute-timings",
+    "method": "GET",
+    "sortNum": 10000,
+    "created": "2022-06-20T10:47:48.720Z",
+    "modified": "2022-06-20T10:48:34.231Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "583cbe11-d438-44c7-96ef-655e8bbeeb55",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "9813476d-05d3-42c2-aadc-d62105a106cc",
+    "name": "Get a mute timing",
+    "url": "{{baseUrl}}/api/v1/provisioning/mute-timings/{{muteName}}",
+    "method": "GET",
+    "sortNum": 20000,
+    "created": "2022-06-20T10:54:58.165Z",
+    "modified": "2022-06-20T10:56:05.671Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "611a536f-3bb3-4db4-873d-f825c7481251",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "9813476d-05d3-42c2-aadc-d62105a106cc",
+    "name": "Create a new mute timing",
+    "url": "{{baseUrl}}/api/v1/provisioning/mute-timings",
+    "method": "POST",
+    "sortNum": 30000,
+    "created": "2022-06-20T10:54:59.665Z",
+    "modified": "2022-06-20T11:00:42.577Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": \"{{muteName}}\",\n  \"time_intervals\": [\n    {\n      \"times\": [\n        {\n          \"start_time\": \"00:00\",\n          \"end_time\": \"07:00\"\n        }\n      ],\n      \"weekdays\": [\n        \"monday:friday\"\n      ]\n    }\n  ]\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "d755603b-2c8e-47a3-9970-a8b78ef6d6d0",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "9813476d-05d3-42c2-aadc-d62105a106cc",
+    "name": "Replace an existing mute timing",
+    "url": "{{baseUrl}}/api/v1/provisioning/mute-timings/{{muteName}}",
+    "method": "PUT",
+    "sortNum": 40000,
+    "created": "2022-06-20T10:55:02.161Z",
+    "modified": "2022-06-20T11:01:46.929Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": \"{{muteName}}\",\n  \"time_intervals\": [\n    {\n      \"times\": [\n        {\n          \"start_time\": \"00:00\",\n          \"end_time\": \"08:00\"\n        }\n      ],\n      \"weekdays\": [\n        \"monday:friday\"\n      ]\n    }\n  ]\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "3e036c5b-ab50-4003-ad72-d605500863aa",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "9813476d-05d3-42c2-aadc-d62105a106cc",
+    "name": "Delete a mute timing",
+    "url": "{{baseUrl}}/api/v1/provisioning/mute-timings/{{muteName}}",
+    "method": "DELETE",
+    "sortNum": 50000,
+    "created": "2022-06-20T10:55:03.828Z",
+    "modified": "2022-06-20T11:01:26.434Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "26bf3180-cfe7-4d87-b11c-f5977f569e33",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "3439b61a-96ec-49fe-a523-9ccaa602232d",
+    "name": "Get all message templates",
+    "url": "{{baseUrl}}/api/v1/provisioning/templates",
+    "method": "GET",
+    "sortNum": 10000,
+    "created": "2022-06-20T11:01:55.816Z",
+    "modified": "2022-06-20T11:02:19.524Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "763a42e8-8d80-4549-b319-d0fb8f8a8883",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "3439b61a-96ec-49fe-a523-9ccaa602232d",
+    "name": "Get a message template",
+    "url": "{{baseUrl}}/api/v1/provisioning/templates/{{templateName}}",
+    "method": "GET",
+    "sortNum": 20000,
+    "created": "2022-06-20T11:02:26.871Z",
+    "modified": "2022-06-20T11:03:22.394Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "fe437c8b-6790-444f-90cb-c5ebc533a5e5",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "3439b61a-96ec-49fe-a523-9ccaa602232d",
+    "name": "Creates or updates a template",
+    "url": "{{baseUrl}}/api/v1/provisioning/templates/{{templateName}}",
+    "method": "PUT",
+    "sortNum": 30000,
+    "created": "2022-06-20T11:02:28.236Z",
+    "modified": "2022-06-20T11:06:46.989Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"Name\": \"{{templateName}}\",\n  \"Template\": \"{{ define \\\"{{templateName}}\\\" }}\\n  this is a mail from a provisioned template\\n{{ end }}\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "708bedc7-2264-417d-8d7c-ad4fcd284abb",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "3439b61a-96ec-49fe-a523-9ccaa602232d",
+    "name": "Delete a template",
+    "url": "{{baseUrl}}/api/v1/provisioning/templates/{{templateName}}",
+    "method": "DELETE",
+    "sortNum": 40000,
+    "created": "2022-06-20T11:02:29.751Z",
+    "modified": "2022-06-20T11:07:08.511Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
   }
 ]
