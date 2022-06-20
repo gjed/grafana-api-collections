@@ -1,7 +1,6 @@
 {
-  "thunder-client.workspaceRelativePath": "./",
   "thunder-client.saveToWorkspace": false,
   "thunder-client.showActivityFromCollection": true,
   "thunder-client.httpVersion": "HTTP/2",
-  "thunder-client.customLocation": "${workspaceFolder}/thunder-client"
+  "thunder-client.customLocation": "$HOME/grafana-api-collections/thunder-client"
 }
