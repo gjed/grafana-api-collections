@@ -2810,5 +2810,563 @@
       "form": []
     },
     "tests": []
+  },
+  {
+    "_id": "b214e812-2b0a-4dca-a43f-eb1cd82b4e82",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "e108a7a7-4a5b-496a-aa70-6d993af17052",
+    "name": "Get all data sources",
+    "url": "{{baseUrl}}/api/datasources",
+    "method": "GET",
+    "sortNum": 470000,
+    "created": "2022-06-21T15:06:46.516Z",
+    "modified": "2022-06-21T15:10:06.569Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "3be1ebc1-128c-4a92-b708-eec571212af7",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "e108a7a7-4a5b-496a-aa70-6d993af17052",
+    "name": "Get a single data source by uid",
+    "url": "{{baseUrl}}/api/datasources/uid/{{datasourceUid}}",
+    "method": "GET",
+    "sortNum": 480000,
+    "created": "2022-06-21T15:10:14.718Z",
+    "modified": "2022-06-21T15:16:42.529Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "773de8af-178f-42b6-aeb4-4a8eac818974",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "e108a7a7-4a5b-496a-aa70-6d993af17052",
+    "name": "Get a single data source by name",
+    "url": "{{baseUrl}}/api/datasources/name/{{datasourceName}}",
+    "method": "GET",
+    "sortNum": 490000,
+    "created": "2022-06-21T15:10:16.446Z",
+    "modified": "2022-06-21T15:17:25.554Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "9a11e004-7c17-42a4-bc1d-0aa8c0476b64",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "e108a7a7-4a5b-496a-aa70-6d993af17052",
+    "name": "Get data source Id by name",
+    "url": "{{baseUrl}}/api/datasources/id/{{datasourceName}}",
+    "method": "GET",
+    "sortNum": 500000,
+    "created": "2022-06-21T15:10:31.656Z",
+    "modified": "2022-06-21T15:17:41.943Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "adb08d58-2ec5-489d-a31e-c4dcfbbf5dfe",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "e108a7a7-4a5b-496a-aa70-6d993af17052",
+    "name": "Create a data source",
+    "url": "{{baseUrl}}/api/datasources",
+    "method": "POST",
+    "sortNum": 510000,
+    "created": "2022-06-21T15:10:33.428Z",
+    "modified": "2022-06-21T15:18:47.608Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\":\"test_datasource\",\n  \"type\":\"graphite\",\n  \"url\":\"http://mydatasource.com\",\n  \"access\":\"proxy\",\n  \"basicAuth\":false\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "2ac46c8f-d8db-4002-90fd-70faddf4f495",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "e108a7a7-4a5b-496a-aa70-6d993af17052",
+    "name": "Update an existing data source by id",
+    "url": "{{baseUrl}}/api/datasources/uid/{{datasourceUid}}",
+    "method": "PUT",
+    "sortNum": 520000,
+    "created": "2022-06-21T15:19:21.198Z",
+    "modified": "2022-06-21T15:21:09.881Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"id\":1,\n  \"orgId\":1,\n  \"name\":\"test_datasource\",\n  \"type\":\"graphite\",\n  \"access\":\"proxy\",\n  \"url\":\"http://mydatasource.com\",\n  \"password\":\"\",\n  \"user\":\"\",\n  \"database\":\"\",\n  \"basicAuth\":true,\n  \"basicAuthUser\":\"basicuser\",\n  \"secureJsonData\": {\n    \"basicAuthPassword\": \"basicpassword\"\n  },\n  \"isDefault\":false,\n  \"jsonData\":null\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "f4a263c5-1e75-413a-8718-bf759f7c949b",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "e108a7a7-4a5b-496a-aa70-6d993af17052",
+    "name": "Delete an existing data source by uid",
+    "url": "{{baseUrl}}/api/datasources/uid/{{datasourceUid}}",
+    "method": "DELETE",
+    "sortNum": 530000,
+    "created": "2022-06-21T15:21:29.726Z",
+    "modified": "2022-06-21T15:21:39.688Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "b70fa257-b5f3-4f56-8c7f-641222bdeae6",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "e108a7a7-4a5b-496a-aa70-6d993af17052",
+    "name": "Delete an existing data source by name",
+    "url": "{{baseUrl}}/api/datasources/name/{{datasourceName}}",
+    "method": "DELETE",
+    "sortNum": 540000,
+    "created": "2022-06-21T15:21:55.287Z",
+    "modified": "2022-06-21T15:23:11.826Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "4457acac-f7f1-435b-8fbe-88abd1445af9",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "e108a7a7-4a5b-496a-aa70-6d993af17052",
+    "name": "Data source proxy calls",
+    "url": "{{baseUrl}}/api/datasources/proxy/uid/{{datasourceUid}}/ready",
+    "method": "GET",
+    "sortNum": 550000,
+    "created": "2022-06-21T15:22:48.675Z",
+    "modified": "2022-06-21T15:24:10.629Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "e696f085-a3a7-42e1-b66a-3eea37cb955b",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "e108a7a7-4a5b-496a-aa70-6d993af17052",
+    "name": "Check data source health",
+    "url": "{{baseUrl}}/api/datasources/uid/{{datasourceUid}}/health",
+    "method": "GET",
+    "sortNum": 560000,
+    "created": "2022-06-21T15:24:24.841Z",
+    "modified": "2022-06-21T15:24:57.276Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "3f2b0071-2b9c-4280-8a1d-6dc5ffeb61f4",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "e108a7a7-4a5b-496a-aa70-6d993af17052",
+    "name": "Fetch data source resources",
+    "url": "{{baseUrl}}/api/datasources/uid/{{datasourceUid}}/resources/dimension-keys",
+    "method": "GET",
+    "sortNum": 570000,
+    "created": "2022-06-21T15:25:53.288Z",
+    "modified": "2022-06-21T15:26:36.188Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "b9b0b7f4-ac72-4399-8116-9848cbf48e8f",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "e108a7a7-4a5b-496a-aa70-6d993af17052",
+    "name": "Query a data source",
+    "url": "{{baseUrl}}/api/ds/query",
+    "method": "POST",
+    "sortNum": 580000,
+    "created": "2022-06-21T15:25:54.822Z",
+    "modified": "2022-06-21T15:28:42.884Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n   \"queries\":[\n      {\n         \"refId\":\"A\",\n         \"scenarioId\":\"csv_metric_values\",\n         \"datasource\":{\n            \"uid\":\"{{datasourceUid}}\"\n         },\n         \"format\": \"table\",\n         \"maxDataPoints\":1848,\n         \"intervalMs\":200,\n         \"stringInput\":\"1,20,90,30,5,0\"\n      }\n   ],\n   \"from\":\"now-5m\",\n   \"to\":\"now\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "1709feb0-f2eb-4f1e-95b8-17703ea1a69e",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "9e465556-916e-419a-ad5b-e1f4f3ed8c79",
+    "name": "Get all folders",
+    "url": "{{baseUrl}}/api/folders",
+    "method": "GET",
+    "sortNum": 490000,
+    "created": "2022-06-21T15:29:44.278Z",
+    "modified": "2022-06-21T15:32:18.394Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "cd071427-5f7b-4752-8765-50a5bb32cc4e",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "9e465556-916e-419a-ad5b-e1f4f3ed8c79",
+    "name": "Get folder by uid",
+    "url": "{{baseUrl}}/api/folders",
+    "method": "GET",
+    "sortNum": 500000,
+    "created": "2022-06-21T15:30:33.389Z",
+    "modified": "2022-06-21T15:30:33.389Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "36588c0f-7cdb-4b7b-8dcb-fae8dad42834",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "9e465556-916e-419a-ad5b-e1f4f3ed8c79",
+    "name": "Create folder",
+    "url": "{{baseUrl}}/api/folders",
+    "method": "POST",
+    "sortNum": 510000,
+    "created": "2022-06-21T15:30:34.795Z",
+    "modified": "2022-06-21T15:32:38.504Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"uid\": \"{{folderUid}}\",\n  \"title\": \"Department ABC\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "a3aca9cc-8b0c-4166-9698-5133a82f16a9",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "9e465556-916e-419a-ad5b-e1f4f3ed8c79",
+    "name": "Update folder",
+    "url": "{{baseUrl}}/api/folders/{{folderUid}}",
+    "method": "PUT",
+    "sortNum": 520000,
+    "created": "2022-06-21T15:30:36.260Z",
+    "modified": "2022-06-21T15:33:30.157Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"title\":\"Department DEF\",\n  \"version\": 1\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "a8ab4c2a-a6d8-4101-ac62-45be0ad333a0",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "9e465556-916e-419a-ad5b-e1f4f3ed8c79",
+    "name": "Delete folder",
+    "url": "{{baseUrl}}/api/folders/{{folderUid}}",
+    "method": "DELETE",
+    "sortNum": 530000,
+    "created": "2022-06-21T15:32:59.331Z",
+    "modified": "2022-06-21T15:34:09.955Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "9c9c9df3-f6a4-49c1-ba68-97eb01e9d1aa",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "9e465556-916e-419a-ad5b-e1f4f3ed8c79",
+    "name": "Get folder by id",
+    "url": "{{baseUrl}}/api/folders/id/{{folderId}}",
+    "method": "GET",
+    "sortNum": 540000,
+    "created": "2022-06-21T15:34:42.760Z",
+    "modified": "2022-06-21T15:39:20.460Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "1823ced6-74fd-496c-9d26-4949b0196e13",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "c56803c6-5b62-49ea-abc6-9979eff00eae",
+    "name": "Get permissions for a folder",
+    "url": "{{baseUrl}}/api/folders/id/{{folderId}}",
+    "method": "GET",
+    "sortNum": 10000,
+    "created": "2022-06-21T15:36:10.008Z",
+    "modified": "2022-06-21T15:36:11.730Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "a5b62c26-60f9-49b4-9a56-b71953360e89",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "c56803c6-5b62-49ea-abc6-9979eff00eae",
+    "name": "Update permissions for a folder",
+    "url": "{{baseUrl}}/api/folders/{{folderUid}}/permissions",
+    "method": "POST",
+    "sortNum": 20000,
+    "created": "2022-06-21T15:37:08.504Z",
+    "modified": "2022-06-21T15:39:56.198Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"items\": [\n    {\n      \"role\": \"Viewer\",\n      \"permission\": 1\n    },\n    {\n      \"role\": \"Editor\",\n      \"permission\": 2\n    },\n    {\n      \"teamId\": 1,\n      \"permission\": 1\n    },\n    {\n      \"userId\": 1,\n      \"permission\": 4\n    }\n  ]\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "be52e4ee-f839-4fb7-881a-f1bf2877ac6e",
+    "colId": "c91aad30-b523-4472-b29b-c1fc63dbcda1",
+    "containerId": "95276d46-ca56-4125-94d7-82f0b9988a40",
+    "name": "Search folders and dashboards",
+    "url": "{{baseUrl}}/api/search?folderIds=0&starred=false&limit=1000&page=1",
+    "method": "GET",
+    "sortNum": 10000,
+    "created": "2022-06-21T15:40:13.254Z",
+    "modified": "2022-06-21T15:42:35.001Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [
+      {
+        "name": "query",
+        "value": "",
+        "isDisabled": true,
+        "isPath": false
+      },
+      {
+        "name": "tag",
+        "value": "",
+        "isDisabled": true,
+        "isPath": false
+      },
+      {
+        "name": "type",
+        "value": "",
+        "isDisabled": true,
+        "isPath": false
+      },
+      {
+        "name": "dashboardIds",
+        "value": "",
+        "isDisabled": true,
+        "isPath": false
+      },
+      {
+        "name": "folderIds",
+        "value": "0",
+        "isPath": false
+      },
+      {
+        "name": "starred",
+        "value": "false",
+        "isPath": false
+      },
+      {
+        "name": "limit",
+        "value": "1000",
+        "isPath": false
+      },
+      {
+        "name": "page",
+        "value": "1",
+        "isPath": false
+      }
+    ],
+    "tests": []
   }
 ]
