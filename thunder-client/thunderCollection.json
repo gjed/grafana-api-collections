@@ -162,6 +162,41 @@
         "containerId": "",
         "created": "2022-06-21T15:05:56.284Z",
         "sortNum": 29961
+      },
+      {
+        "_id": "14bd6a4b-f16e-4a9d-af28-656c8e76ee23",
+        "name": "Library Element API",
+        "containerId": "",
+        "created": "2022-06-21T15:52:47.262Z",
+        "sortNum": 29980.5
+      },
+      {
+        "_id": "37165eae-dd85-4c25-844b-fc79a2d3c68a",
+        "name": "Playlist API",
+        "containerId": "",
+        "created": "2022-06-21T15:53:00.977Z",
+        "sortNum": 31875
+      },
+      {
+        "_id": "009ed11e-643e-4fcf-a057-e96f7c6edbbd",
+        "name": "Preferences API",
+        "containerId": "",
+        "created": "2022-06-21T15:53:08.482Z",
+        "sortNum": 32187.5
+      },
+      {
+        "_id": "61d99bb8-2347-4c18-abf3-ebe8ab287cf9",
+        "name": "Query History API",
+        "containerId": "",
+        "created": "2022-06-21T15:53:23.121Z",
+        "sortNum": 32343.8
+      },
+      {
+        "_id": "fb19fed3-2f3a-441d-b475-b317c0c6d6ec",
+        "name": "Snapshot API",
+        "containerId": "",
+        "created": "2022-06-21T15:53:31.281Z",
+        "sortNum": 33750
       }
     ],
     "settings": {
