@@ -1,4 +1,5 @@
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/gjed)
+[![License](https://img.shields.io/github/license/gjed/grafana-api-collections)](LICENSE)
+![Activity](https://img.shields.io/github/commit-activity/m/gjed/grafana-api-collections)
 
 # Grafana API Collections
 
@@ -25,6 +26,7 @@ It is possible to export this collection to postman v1 format.
 If you're interested in contribuiting to this project, please read the [Contribuiting documentation](CONTRIBUTING.md).
 Any contribution is welcomed!
 
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/gjed)
 
 
 
