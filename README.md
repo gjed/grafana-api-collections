@@ -1,6 +1,8 @@
 [![License](https://img.shields.io/github/license/gjed/grafana-api-collections)](LICENSE)
 ![Activity](https://img.shields.io/github/commit-activity/m/gjed/grafana-api-collections)
 
+> This repository is being archived since the swagger and openapi definitions are availables at https://play.grafana.org/swagger
+
 # Grafana API Collections
 
 A collection of requests for Grafana HTTP Api
